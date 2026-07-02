@@ -23,26 +23,39 @@ if (topBtn) {
 // =========================
 
 const products = [
-    {
-        name: "Movie Replica Mask",
-        price: "£39.99",
-        emoji: "🎭"
-    },
-    {
-        name: "Web Shooter",
-        price: "£59.99",
-        emoji: "🕸"
-    },
-    {
-        name: "Amazing Spider Comic",
-        price: "£14.99",
-        emoji: "📚"
-    },
-    {
-        name: "Collector Figure",
-        price: "£79.99",
-        emoji: "🧸"
-    }
+
+{
+    name:"Spider-Punk Mask",
+    price:"£49.99",
+    category:"Masks",
+    badge:"NEW",
+    emoji:"🎭"
+},
+
+{
+    name:"Classic Web Shooter",
+    price:"£59.99",
+    category:"Props",
+    badge:"BEST SELLER",
+    emoji:"🕸"
+},
+
+{
+    name:"Amazing Spider Comic",
+    price:"£14.99",
+    category:"Comics",
+    badge:"",
+    emoji:"📚"
+},
+
+{
+    name:"Collector Figure",
+    price:"£79.99",
+    category:"Collectibles",
+    badge:"LIMITED",
+    emoji:"🧸"
+}
+
 ];
 
 // Build products automatically

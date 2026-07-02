@@ -364,3 +364,112 @@ transform:translateY(-3px);
 box-shadow:0 0 18px rgba(37,99,235,.45);
 
 }
+/* ---------- FEATURED PRODUCTS ---------- */
+
+.featured{
+
+padding:100px 8%;
+
+}
+
+.featured h2{
+
+text-align:center;
+
+font-family:'Bebas Neue';
+
+font-size:46px;
+
+letter-spacing:2px;
+
+margin-bottom:50px;
+
+}
+
+.products{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.product{
+
+background:rgba(255,255,255,.05);
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.product:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 0 35px rgba(37,99,235,.3);
+
+}
+
+.product-image{
+
+font-size:80px;
+
+margin-bottom:20px;
+
+transition:.3s;
+
+}
+
+.product:hover .product-image{
+
+transform:scale(1.1);
+
+}
+
+.price{
+
+font-size:24px;
+
+font-weight:bold;
+
+margin:20px 0;
+
+color:#4ea3ff;
+
+}
+
+.buy-btn{
+
+display:inline-block;
+
+padding:14px 28px;
+
+border-radius:30px;
+
+background:linear-gradient(90deg,#2563eb,#d11f39);
+
+color:white;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.buy-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 0 20px rgba(209,31,57,.4);
+
+}

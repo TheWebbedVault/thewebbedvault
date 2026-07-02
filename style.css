@@ -787,3 +787,50 @@ margin-top:8px;
 
 }
 <button id="topBtn">↑</button>
+/* ================= PRODUCT BADGES ================= */
+
+.product{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.badge{
+
+position:absolute;
+
+top:15px;
+
+left:15px;
+
+padding:8px 14px;
+
+border-radius:20px;
+
+font-size:12px;
+
+font-weight:bold;
+
+background:#d11f39;
+
+color:white;
+
+letter-spacing:1px;
+
+}
+
+.category{
+
+margin-top:10px;
+
+color:#999;
+
+font-size:14px;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+}

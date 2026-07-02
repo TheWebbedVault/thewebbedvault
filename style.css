@@ -725,3 +725,64 @@ transition:.3s;
 background:linear-gradient(90deg,#2563eb,#d11f39);
 
 }
+/* ================= HERO STATS ================= */
+
+.hero-stats{
+
+display:flex;
+
+justify-content:center;
+
+gap:60px;
+
+margin-top:70px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-stats div{
+
+text-align:center;
+
+padding:20px 30px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:18px;
+
+backdrop-filter:blur(8px);
+
+transition:.3s;
+
+}
+
+.hero-stats div:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px rgba(37,99,235,.35);
+
+}
+
+.hero-stats h2{
+
+font-size:42px;
+
+font-family:'Bebas Neue';
+
+color:#4ea3ff;
+
+letter-spacing:2px;
+
+}
+
+.hero-stats p{
+
+color:#ccc;
+
+margin-top:8px;
+
+}

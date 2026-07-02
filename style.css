@@ -323,3 +323,44 @@ width:65px;
 }
 
 }
+/* ---------- CATEGORY UPGRADE ---------- */
+
+.icon{
+    font-size:60px;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.card:hover .icon{
+    transform:scale(1.2) rotate(-8deg);
+}
+
+.card-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 24px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:white;
+
+background:linear-gradient(90deg,#2563eb,#d11f39);
+
+transition:.3s;
+
+font-size:14px;
+
+}
+
+.card-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 0 18px rgba(37,99,235,.45);
+
+}

@@ -1,178 +1,170 @@
-/* ---------- GOOGLE FONT ---------- */
+/* =========================
+   THE WEBBED VAULT
+========================= */
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
 
-    background:#070707;
+font-family:Poppins,sans-serif;
 
-    color:white;
+background:#070707;
 
-    overflow-x:hidden;
+color:white;
 
-}
-
-/* ---------- NAVBAR ---------- */
-
-nav{
-
-    position:fixed;
-
-    width:100%;
-
-    padding:20px 8%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    backdrop-filter:blur(15px);
-
-    background:rgba(0,0,0,.35);
-
-    z-index:999;
+overflow-x:hidden;
 
 }
 
-.logo img{
+/* Background Glow */
 
-    width:85px;
-
-    transition:.4s;
-
-}
-
-.logo img:hover{
-
-    transform:rotate(-8deg) scale(1.08);
-
-}
-
-nav ul{
-
-    display:flex;
-
-    gap:35px;
-
-    list-style:none;
-
-}
-
-nav li{
-
-    cursor:pointer;
-
-    transition:.35s;
-
-    font-weight:500;
-
-}
-
-nav li:hover{
-
-    color:#ff2b45;
-
-}
-
-/* ---------- HERO ---------- */
-
-.hero{
-
-    height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-/* Blue + Red glowing background */
-
-.hero::before{
+body::before{
 
 content:"";
 
-position:absolute;
+position:fixed;
+
+left:-250px;
+
+top:-250px;
 
 width:700px;
 
 height:700px;
 
-background:radial-gradient(circle,#ff1836 0%,transparent 65%);
+background:#d11f39;
 
-left:-200px;
+filter:blur(180px);
 
-top:-200px;
+opacity:.18;
 
-opacity:.25;
-
-filter:blur(80px);
-
-animation:float1 8s ease-in-out infinite;
+z-index:-2;
 
 }
 
-.hero::after{
+body::after{
 
 content:"";
 
-position:absolute;
-
-width:700px;
-
-height:700px;
-
-background:radial-gradient(circle,#1479ff 0%,transparent 65%);
+position:fixed;
 
 right:-250px;
 
 bottom:-250px;
 
-opacity:.22;
+width:700px;
 
-filter:blur(90px);
+height:700px;
 
-animation:float2 10s ease-in-out infinite;
+background:#2563eb;
+
+filter:blur(180px);
+
+opacity:.18;
+
+z-index:-2;
 
 }
 
-.hero-content{
+/* NAV */
 
-position:relative;
+nav{
 
-z-index:2;
+position:fixed;
 
-max-width:900px;
+top:0;
 
-padding:20px;
+width:100%;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(10,10,10,.55);
+
+backdrop-filter:blur(12px);
+
+z-index:999;
+
+}
+
+.logo{
+
+width:80px;
+
+transition:.4s;
+
+}
+
+.logo:hover{
+
+transform:rotate(-6deg) scale(1.08);
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:30px;
+
+list-style:none;
+
+}
+
+nav li{
+
+cursor:pointer;
+
+transition:.3s;
+
+font-weight:500;
+
+}
+
+nav li:hover{
+
+color:#2563eb;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:40px;
 
 }
 
 .hero h1{
 
-font-size:72px;
+font-family:'Bebas Neue',sans-serif;
 
-font-weight:700;
+font-size:90px;
 
-letter-spacing:2px;
+letter-spacing:4px;
 
 margin-bottom:15px;
 
@@ -182,9 +174,9 @@ margin-bottom:15px;
 
 font-size:22px;
 
-color:#d0d0d0;
+color:#d4d4d4;
 
-margin-bottom:45px;
+margin-bottom:40px;
 
 }
 
@@ -192,21 +184,21 @@ margin-bottom:45px;
 
 display:inline-block;
 
-padding:16px 45px;
+padding:18px 45px;
 
 border-radius:40px;
 
 text-decoration:none;
 
-font-weight:bold;
+background:linear-gradient(90deg,#2563eb,#d11f39);
 
 color:white;
 
-background:linear-gradient(90deg,#1479ff,#ff1836);
+font-weight:bold;
 
-transition:.35s;
+transition:.3s;
 
-box-shadow:0 0 30px rgba(20,121,255,.35);
+box-shadow:0 0 25px rgba(37,99,235,.4);
 
 }
 
@@ -214,45 +206,95 @@ box-shadow:0 0 30px rgba(20,121,255,.35);
 
 transform:translateY(-5px);
 
-box-shadow:0 0 50px rgba(255,30,70,.5);
+box-shadow:0 0 40px rgba(209,31,57,.5);
 
 }
 
-/* ---------- ANIMATIONS ---------- */
+/* CATEGORIES */
 
-@keyframes float1{
+.categories{
 
-0%,100%{
-
-transform:translateY(0);
+padding:100px 8%;
 
 }
 
-50%{
+.categories h2{
 
-transform:translateY(45px);
+text-align:center;
 
-}
+font-size:42px;
 
-}
+margin-bottom:50px;
 
-@keyframes float2{
+font-family:'Bebas Neue';
 
-0%,100%{
-
-transform:translateY(0);
+letter-spacing:2px;
 
 }
 
-50%{
+.cards{
 
-transform:translateY(-45px);
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
 
 }
 
+.card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:20px;
+
+padding:35px;
+
+text-align:center;
+
+transition:.35s;
+
+backdrop-filter:blur(12px);
+
 }
 
-/* ---------- MOBILE ---------- */
+.card:hover{
+
+transform:translateY(-10px);
+
+border-color:#2563eb;
+
+box-shadow:0 0 30px rgba(37,99,235,.25);
+
+}
+
+.card{
+
+font-size:20px;
+
+}
+
+.card h3{
+
+margin:18px 0;
+
+font-size:26px;
+
+font-family:'Bebas Neue';
+
+letter-spacing:1px;
+
+}
+
+.card p{
+
+color:#bdbdbd;
+
+}
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -264,7 +306,7 @@ display:none;
 
 .hero h1{
 
-font-size:48px;
+font-size:55px;
 
 }
 
@@ -274,7 +316,7 @@ font-size:18px;
 
 }
 
-.logo img{
+.logo{
 
 width:65px;
 

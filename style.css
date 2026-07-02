@@ -834,3 +834,90 @@ text-transform:uppercase;
 letter-spacing:1px;
 
 }
+/* ================= FOOTER ================= */
+
+footer{
+
+margin-top:100px;
+
+padding:70px 8% 30px;
+
+background:#050505;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:40px;
+
+}
+
+.footer-grid h3{
+
+font-family:'Bebas Neue';
+
+font-size:28px;
+
+margin-bottom:18px;
+
+letter-spacing:1px;
+
+}
+
+.footer-grid p{
+
+color:#bdbdbd;
+
+line-height:1.7;
+
+}
+
+.footer-grid a{
+
+display:block;
+
+margin:10px 0;
+
+text-decoration:none;
+
+color:#bdbdbd;
+
+transition:.3s;
+
+}
+
+.footer-grid a:hover{
+
+color:#4ea3ff;
+
+padding-left:5px;
+
+}
+
+footer hr{
+
+margin:40px 0 20px;
+
+border:none;
+
+height:1px;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.copyright{
+
+text-align:center;
+
+color:#777;
+
+font-size:14px;
+
+}

@@ -65,28 +65,34 @@ if(productContainer){
 
     productContainer.innerHTML = "";
 
-    products.forEach(product => {
+    productContainer.innerHTML += `
 
-        productContainer.innerHTML += `
+<div class="product">
 
-        <div class="product">
+<div class="badge">${product.badge}</div>
 
-            <div class="product-image">
-                ${product.emoji}
-            </div>
+<div class="product-image">
 
-            <h3>${product.name}</h3>
+${product.emoji}
 
-            <p class="price">${product.price}</p>
+</div>
 
-            <a href="#" class="buy-btn">
-                View Product
-            </a>
+<h3>${product.name}</h3>
 
-        </div>
+<p class="category">${product.category}</p>
 
-        `;
+<p class="price">${product.price}</p>
 
-    });
+<a href="#" class="buy-btn">
 
-}
+View Product
+
+</a>
+
+</div>
+
+`;
+
+       
+
+

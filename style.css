@@ -961,3 +961,56 @@ width:100%;
 z-index:1000;
 
 }
+/* ================= PRODUCT PAGE ================= */
+
+.product-page{
+
+padding:180px 8% 100px;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.product-photo{
+
+height:500px;
+
+border-radius:25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:180px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.product-info h1{
+
+font-family:'Bebas Neue';
+
+font-size:64px;
+
+margin-bottom:20px;
+
+}
+
+.product-info p{
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}

@@ -83,7 +83,7 @@ ${product.emoji}
 
 <p class="price">${product.price}</p>
 
-<a href="#" class="buy-btn">
+<a href="product.html" class="buy-btn">
 
 View Product
 

@@ -1302,3 +1302,14 @@ transition:.35s;
 transform:scale(1.05);
 
 }
+.stars{
+
+color:#FFD700;
+
+font-size:20px;
+
+margin:10px 0;
+
+letter-spacing:2px;
+
+}

@@ -125,6 +125,33 @@ if (searchBar) {
     });
 
 }
-       
+// =========================
+// CATEGORY FILTERS
+// =========================
+
+const filterButtons = document.querySelectorAll(".filters button");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const category = button.dataset.category;
+
+        document.querySelectorAll(".product").forEach(card => {
+
+            if (
+                category === "All" ||
+                card.querySelector(".category").textContent === category
+            ) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});       
 
 

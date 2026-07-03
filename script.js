@@ -92,7 +92,39 @@ View Product
 </div>
 
 `;
+// =========================
+// PRODUCT SEARCH
+// =========================
 
+const searchBar = document.getElementById("searchBar");
+
+if (searchBar) {
+
+    searchBar.addEventListener("input", () => {
+
+        const searchText = searchBar.value.toLowerCase();
+
+        const cards = document.querySelectorAll(".product");
+
+        cards.forEach(card => {
+
+            const title = card.querySelector("h3").textContent.toLowerCase();
+
+            if (title.includes(searchText)) {
+
+                card.style.display = "block";
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+}
        
 
 

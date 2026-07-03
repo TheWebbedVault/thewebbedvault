@@ -921,3 +921,28 @@ color:#777;
 font-size:14px;
 
 }
+/* ================= ANNOUNCEMENT BAR ================= */
+
+.announcement{
+
+background:linear-gradient(90deg,#2563eb,#d11f39);
+
+padding:10px;
+
+text-align:center;
+
+font-size:14px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+z-index:1000;
+
+}

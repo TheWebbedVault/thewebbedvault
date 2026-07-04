@@ -1534,3 +1534,58 @@ background:#2563eb;
 100%{transform:translateY(0);}
 
 }
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px){
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+padding:20px;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:60px 20px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+.hero-stats{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.search-bar{
+
+width:100%;
+
+}
+
+}

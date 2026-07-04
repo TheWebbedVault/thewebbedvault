@@ -154,4 +154,28 @@ filterButtons.forEach(button => {
 
 });       
 
+// =========================
+// CART COUNTER
+// =========================
 
+let cart = 0;
+
+const cartCount = document.getElementById("cartCount");
+
+const addButtons = document.querySelectorAll(".add-cart");
+
+addButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        cart++;
+
+        if(cartCount){
+
+            cartCount.textContent = cart;
+
+        }
+
+    });
+
+});

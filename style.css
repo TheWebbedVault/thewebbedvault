@@ -1327,3 +1327,48 @@ margin-bottom:20px;
 color:#e74c3c;
 
 }
+/* =========================
+   CART ICON
+========================= */
+
+.cart-icon{
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+cursor:pointer;
+
+}
+
+#cartCount{
+
+position:absolute;
+
+top:-8px;
+
+right:-10px;
+
+width:20px;
+
+height:20px;
+
+background:#d11f39;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:12px;
+
+font-weight:bold;
+
+color:white;
+
+}

@@ -102,17 +102,15 @@ z-index:999;
 
 .logo{
 
-width:85px;
+height:75px;
 
-transition:.35s;
-
-filter:drop-shadow(0 0 15px rgba(37,99,235,.35));
+transition:.3s;
 
 }
 
 .logo:hover{
 
-transform:scale(1.08) rotate(-5deg);
+transform:rotate(-8deg) scale(1.08);
 
 filter:drop-shadow(0 0 25px rgba(209,31,57,.45));
 

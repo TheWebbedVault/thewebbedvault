@@ -936,27 +936,25 @@ font-size:14px;
 }
 /* ================= ANNOUNCEMENT BAR ================= */
 
-.announcement{
+.top-bar{
 
 background:linear-gradient(90deg,#2563eb,#d11f39);
 
-padding:10px;
+height:42px;
 
-text-align:center;
+display:flex;
 
-font-size:14px;
+justify-content:center;
+
+align-items:center;
+
+font-size:15px;
 
 font-weight:600;
 
-letter-spacing:1px;
+color:white;
 
-position:fixed;
-
-top:0;
-
-width:100%;
-
-z-index:1000;
+}
 
 }
 /* ================= PRODUCT PAGE ================= */

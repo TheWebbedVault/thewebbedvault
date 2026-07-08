@@ -1602,11 +1602,10 @@ gap:30px;
 }
 
 .nav-search{
-
-position:relative;
-
-margin-left:30px;
-
+    position:relative;
+    flex:1;
+    max-width:320px;
+    margin:0 30px;
 }
 
 .nav-search input{

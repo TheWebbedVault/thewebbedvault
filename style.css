@@ -1583,7 +1583,23 @@ flex-direction:column;
 width:100%;
 
 }
+/* ==========================
+   NAVBAR
+========================== */
 
+.navbar{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:15px 50px;
+
+background:#080808;
+
+gap:30px;
+
+}
 }
 .nav-search{
 
@@ -1667,7 +1683,25 @@ transition:.3s;
 color:#2b6cff;
 
 }
+.nav-links a{
 
+color:white;
+text-decoration:none;
+font-weight:600;
+
+}
+
+.nav-links a:visited{
+
+color:white;
+
+}
+
+.nav-links a:hover{
+
+color:#3b82f6;
+
+}
 #cartCount{
 
 position:absolute;

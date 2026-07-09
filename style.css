@@ -108,6 +108,16 @@ height:auto;
 
 display:block;
 
+object-fit:contain;
+
+transition:.3s;
+
+}
+
+.logo:hover{
+
+transform:scale(1.05);
+
 }
 
 .nav-search{
@@ -999,6 +1009,140 @@ border:1px solid rgba(255,255,255,.08);
 
 font-family:'Bebas Neue';
 
-font-size:64px;
+font-size:48px;
+
+margin-bottom:15px;
+
+}
+
+.product-info p{
+
+color:#bdbdbd;
+
+line-height:1.8;
+
+margin:20px 0;
+
+}
+
+.product-details{
+
+margin:30px 0;
+
+}
+
+.product-details h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+.product-details ul{
+
+list-style:none;
+
+margin:15px 0;
+
+}
+
+.product-details li{
+
+padding:8px 0;
+
+color:#bdbdbd;
+
+}
+
+.product-details li:before{
+
+content:"✓ ";
+
+color:#2563eb;
+
+font-weight:bold;
+
+margin-right:10px;
+
+}
+
+.product-rating{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+margin:20px 0;
+
+}
+
+.stars{
+
+font-size:18px;
+
+color:#ffc107;
+
+}
+
+.review-count{
+
+color:#999;
+
+font-size:14px;
+
+}
+
+.add-to-cart{
+
+display:inline-block;
+
+padding:16px 40px;
+
+background:linear-gradient(90deg,#2563eb,#d11f39);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:30px;
+
+font-weight:700;
+
+transition:.3s;
+
+border:none;
+
+cursor:pointer;
+
+margin-top:20px;
+
+}
+
+.add-to-cart:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 0 25px rgba(209,31,57,.4);
+
+}
+
+@media(max-width:900px){
+
+.product-page{
+
+grid-template-columns:1fr;
+
+padding:120px 8% 60px;
+
+}
+
+.product-photo{
+
+height:350px;
+
+}
 
 }

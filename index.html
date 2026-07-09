@@ -20,13 +20,13 @@
 <body>
 <button id="topBtn">↑</button>
 
-<div class="announcement">
+<div class="top-bar">
 🚚 FREE UK SHIPPING ON ORDERS OVER £150 • ⭐ NEW ITEMS ADDED WEEKLY • 🕸 ANYONE CAN WEAR THE MASK
 </div>
 
 <nav class="navbar">
     <a href="index.html">
-        <img src="Logo.png" class="logo" alt="The Webbed Vault Logo">
+        <img src="./images/logo.png" class="logo" alt="The Webbed Vault Logo">
     </a>
 
     <div class="nav-search">
@@ -343,6 +343,26 @@
     © 2026 The Webbed Vault. All Rights Reserved.
 </p>
 </footer>
+
+<script>
+// Scroll to Top Button
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function() {
+    if (window.pageYOffset > 300) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+});
+
+topBtn.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
 
 </body>
 </html>

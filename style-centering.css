@@ -1,0 +1,73 @@
+/* Centering & card layout additions for Featured Collections and Featured Products
+   Added as a separate file so it can be reviewed before merging into style.css
+*/
+
+/* Center the whole section and its heading */
+.categories,
+.featured{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center heading and inner grid */
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+/* Keep the heading centered */
+.categories h2,
+.featured h2{
+  text-align: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+
+/* Collections grid (for Featured Collections) */
+.collections{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center; /* center card content inside each cell */
+  padding: 0 20px; /* small side padding for narrow viewports */
+}
+
+/* Reuse existing .card visual styling but provide a collection-specific class */
+.collection-card{
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: .35s;
+  backdrop-filter: blur(12px);
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Ensure featured products grid remains centered */
+.featured .products{
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-items: center; /* center each product inside its cell */
+  padding: 0 20px;
+}
+
+/* Tweak product title scale so it doesn't overflow the centered area */
+.product h2,
+.product-title{
+  font-size: clamp(20px, 6vw, 44px); /* responsive size */
+  line-height: 1.05;
+  margin: 8px 0 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Small mobile tweak: keep cards stacked and centered */
+@media (max-width: 900px) {
+  .collections,
+  .featured .products{
+    grid-template-columns: 1fr;
+  }
+}

@@ -1320,3 +1320,6 @@ height:350px;
     background:#2563eb;
 
 }
+body{
+outline:8px solid red !important;
+}

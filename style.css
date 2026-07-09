@@ -76,7 +76,7 @@ z-index:-2;
 
 /* NAV */
 
-nav{
+nav, .navbar{
 
 position:fixed;
 
@@ -100,13 +100,24 @@ z-index:999;
 
 }
 
+.logo{
+
+width:80px;
+
+height:auto;
+
+display:block;
+
+}
+
 .nav-search{
     position:relative;
     flex:1;
     max-width:320px;
     margin:0 30px;
 }
-nav ul{
+
+nav ul, .navbar ul{
 
 display:flex;
 
@@ -298,7 +309,7 @@ color:#bdbdbd;
 
 @media(max-width:900px){
 
-nav ul{
+nav ul, .navbar ul{
 
 display:none;
 

@@ -65,7 +65,8 @@ if(productContainer){
 
     productContainer.innerHTML = "";
 
-    productContainer.innerHTML += `
+    products.forEach(product => {
+        productContainer.innerHTML += `
 
 <div class="product">
 
@@ -92,6 +93,9 @@ View Product
 </div>
 
 `;
+    });
+}
+
 // =========================
 // PRODUCT SEARCH
 // =========================

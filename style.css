@@ -258,6 +258,12 @@ box-shadow:0 18px 40px rgba(209,31,57,.35);
 
 .categories{
 
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
 padding:100px 8%;
 
 }
@@ -268,7 +274,11 @@ text-align:center;
 
 font-size:42px;
 
-margin-bottom:50px;
+width:100%;
+
+max-width:1100px;
+
+margin:0 auto 50px;
 
 font-family:'Bebas Neue';
 
@@ -284,6 +294,7 @@ letter-spacing:2px;
 
   /* constrain the grid width and center it on the page */
   max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 
   /* center each item in its grid cell if it doesn't fill the cell */
@@ -335,6 +346,31 @@ letter-spacing:1px;
 
 color:#bdbdbd;
 
+}
+
+/* Collections grid (for Featured Collections) */
+.collections{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Reuse existing .card visual styling but provide a collection-specific class */
+.collection-card{
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: .35s;
+  backdrop-filter: blur(12px);
+  width: 100%;
+  max-width: 420px;
 }
 
 /* MOBILE */
@@ -405,6 +441,11 @@ margin-top:15px;
 
 }
 
+.collections,
+.featured .products{
+  grid-template-columns: 1fr;
+}
+
 }
 
 /* ---------- CATEGORY UPGRADE ---------- */
@@ -453,6 +494,12 @@ box-shadow:0 0 18px rgba(37,99,235,.45);
 
 .featured{
 
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
 padding:100px 8%;
 
 }
@@ -467,7 +514,11 @@ font-size:46px;
 
 letter-spacing:2px;
 
-margin-bottom:50px;
+width:100%;
+
+max-width:1100px;
+
+margin:0 auto 50px;
 
 }
 
@@ -479,6 +530,7 @@ margin-bottom:50px;
 
   /* constrain and center the products grid */
   max-width:1100px;
+  width:100%;
   margin:0 auto;
 
   /* center items inside their cells */
@@ -566,6 +618,16 @@ transform:translateY(-4px);
 
 box-shadow:0 0 20px rgba(209,31,57,.4);
 
+}
+
+/* Tweak product title scale so it doesn't overflow the centered area */
+.product h2,
+.product-title{
+  font-size: clamp(20px, 6vw, 44px);
+  line-height: 1.05;
+  margin: 8px 0 10px;
+  text-align: center;
+  width: 100%;
 }
 
 /* ---------- WHY US ---------- */
@@ -997,11 +1059,3 @@ height:1px;
 background:rgba(255,255,255,.08);
 
 }
-
-.copyright{
-
-text-align:center;
-
-color:#777;
-
-[...]

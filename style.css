@@ -522,7 +522,7 @@ margin:0 auto 50px;
 
 }
 
-/* Centered products grid */
+/* Centered products grid - center products and constrain card width so single-column layouts stay centered */
 .products{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -535,6 +535,7 @@ margin:0 auto 50px;
 
   /* center items inside their cells */
   justify-items:center;
+  justify-content:center;
   align-items:start;
 
   /* prevent touching viewport edges on small screens */
@@ -551,9 +552,11 @@ margin:0 auto 50px;
   transition:.35s;
   backdrop-filter:blur(12px);
 
-  /* ensure product fills its column but caps at a reasonable width */
+  /* ensure product fills its column but stays at a fixed max width so it doesn't stretch full width on small screens */
   width:100%;
-  max-width:460px;
+  max-width:360px;
+  text-align:center;
+  margin:0;
 }
 
 .product:hover{
@@ -580,6 +583,16 @@ transition:.3s;
 
 transform:scale(1.1);
 
+}
+
+/* Make product images fill the card and center them */
+.product img,
+.product-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 16px;
+  object-fit: contain;
 }
 
 .price{
@@ -1058,4 +1071,10 @@ height:1px;
 
 background:rgba(255,255,255,.08);
 
+}
+
+/* Slight tweaks for very small screens */
+@media (max-width:420px){
+  .product{ max-width: 320px; padding: 20px; }
+  .products{ gap: 20px; }
 }
